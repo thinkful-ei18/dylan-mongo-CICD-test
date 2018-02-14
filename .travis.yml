@@ -2,3 +2,11 @@ language: node_js
 node_js: node
 services:
 - mongodb
+deploy:
+  provider: heroku
+  api_key:
+    secure: ZVMpjfoNX0uMpPipP5hqqxcMdKeBD8i2Bw9wWlbQUjACe0xb2EzzlRCZ5I/DbAagqktz8L0yiG5weUADK5DtHGJN4U4WIhsHt0vr/wweeaizZw8BAcTtQVIlxJuT5ZKLVqpPXqkdTOpx4CVnS9IFJSZRK05jFcT/39oPkTEYcicZQlf7/6+GJNmBaupxCnZ+FFAWo7fnon3V+vuxxjjpk3H6T996pyUOt3pOdsZeNR/GH5T5SRCpA1O6S2y3osKHEOwyg+3yav/g8OTjxbQVRONJFfDLfIBAmwSroSaSvUeCGTUvy7tlg5FHjpBLBckyYO88njUSKGf6wM7YZytKxF/ij3EF6/iGaxv/XS1noYeKcQalVPQRtAFAcr063yav8TEKBS1WwwipXf1f9lRKl6+/ob6ZNJ629BAJcpTGhZsrGqcZYe9qo87XGPk6y7ipnHUfZ5yrCT0AlnI1L94iiI4mg1SLRk7Lbe7c+Z6Pj8BNF5NGcx05XKSbsZTODLsZ0ifPLzNa1yTC+epvLUXeJDwN0/XD7ODlcnXYbVtuncs2h073hW2lRiiBVkT5uvGYSH4rSbS9dmGD6FxHIRUkxKOi95PM0TqNuqrhXmH8SWqNG5oKgcPfL6BUzwhk3X8QJc/0XTM+sx4Z/aG+79T0D9ngpYWSLL0EKRis6RjXxhU=
+  app: agile-anchorage-83870
+  on:
+    repo: thinkful-ei18/dylan-mongo-CICD-test
+    branch: feature/with-tests
